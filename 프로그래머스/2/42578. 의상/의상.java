@@ -6,7 +6,7 @@ class Solution {
         
         // 옷 배열을 순회하면서 종류별로 개수를 세기
         for (String[] cloth : clothes) {
-            String name = cloth[0];
+            // String name = cloth[0];
             String kind = cloth[1];
             
             // 종류별로 개수를 증가시키기
