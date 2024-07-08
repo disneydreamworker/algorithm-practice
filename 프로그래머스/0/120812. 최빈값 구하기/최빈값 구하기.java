@@ -15,8 +15,10 @@ class Solution {
         int maxCnt = 0;
         int cnt = 0;
         
-        for (int k = 0; k< answers.length;k++) {
-            if (answers[k] > maxCnt) {
+        for (int k = 0; k < answers.length;k++) {
+            if (answers[k] == 0) {
+                continue;
+            } else if (answers[k] > maxCnt) {
                 index = k;
                 maxCnt = answers[k];
             }
@@ -24,7 +26,7 @@ class Solution {
         
         
         for (int g = 0; g < answers.length; g++){
-            if (g == index) {
+            if (g == index || answers[g] == 0) {
                 continue;
             } else if (answers[g] == answers[index]) {
                 cnt++;
