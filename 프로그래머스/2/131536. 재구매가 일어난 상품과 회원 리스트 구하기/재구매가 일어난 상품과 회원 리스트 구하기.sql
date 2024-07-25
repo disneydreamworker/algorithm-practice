@@ -1,3 +1,5 @@
+
+
 select USER_ID, product_id
 from online_sale
 group by user_id, product_id
