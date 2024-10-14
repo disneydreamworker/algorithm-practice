@@ -10,13 +10,13 @@ public class Main {
         int total = sc.nextInt();
         int temp = 0;
 
-        for (int i = 1; i < 10; i++) {
-            for (int j = 1; j < 10; j++) {
-                for (int k = 1; k < 10; k++) {
+        for (int i = 0; i < 300; i++) {
+            for (int j = 0; j < 300; j++) {
+                for (int k = 0; k < 300; k++) {
                     temp = (i * a) + (j * b) + (k * c);
                     if (temp == total) {
                         System.out.println(1);
-                        System.exit(0);
+                        return;
                     }
                 }
             }
